@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  database:
+    image: postgres
+    container_name: database_assistent
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=c##assistent
+      - POSTGRES_PASSWORD=assistent
+      - POSTGRES_DB=xe
+    volumes:
+      - pgdata:/data/postgres
+  app:
+    build: .
+    container_name: assistent
+    ports:
+      - 9512:9512
+    volumes:
+      - .:/app
+    links:
+      - database
+    depends_on:
+      - database
+  
+volumes:
+  pgdata:
+    driver: local

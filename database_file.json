@@ -1,0 +1,6 @@
+{
+   "ip" : "localhost",
+   "key_azure" : "YourSubscriptionKey",
+   "region_azure" : "YourServiceRegion",
+   "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NjkzNDY1MDIsImV4cCI6MTY2OTQzMjkwMiwic3ViIjoiNDg0MDM3YTQtMjljZi00MWI5LWFjYjEtYjUzYmNlMTI0ZDEyIn0.XZ-4Fcd73Ks_V4QZBhBH8-2eDqNrzH_hw3i7QhpHkt0"
+}
